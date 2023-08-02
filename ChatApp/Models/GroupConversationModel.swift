@@ -1,10 +1,11 @@
+//
+//  GroupConversationModel.swift
+//  ChatApp
 
-//  ConversationListModel.swift
 
 import Foundation
 
-
-struct ConversationModel: Codable {
+struct GroupConversationModel: Codable {
     
     let conversationID: String
     let conversationTitle: String
@@ -13,4 +14,10 @@ struct ConversationModel: Codable {
     let messageID: String
     let messageTxt: String
     let messageDate: String
+    let members: Model
+
+    struct Model: Codable {
+        let memberList: [UserModel]
+    }
+    
 }

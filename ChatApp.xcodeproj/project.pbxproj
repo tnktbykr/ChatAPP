@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184FCCBD2A7A7D930084A417 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FCCBC2A7A7D930084A417 /* UserModel.swift */; };
+		184FCCBF2A7A7E5D0084A417 /* GroupConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FCCBE2A7A7E5D0084A417 /* GroupConversationModel.swift */; };
 		18A42EB42A7A3C4500D8A88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A42EB32A7A3C4500D8A88E /* AppDelegate.swift */; };
 		18A42EB62A7A3C4500D8A88E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A42EB52A7A3C4500D8A88E /* SceneDelegate.swift */; };
 		18A42EB82A7A3C4500D8A88E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A42EB72A7A3C4500D8A88E /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184FCCBC2A7A7D930084A417 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		184FCCBE2A7A7E5D0084A417 /* GroupConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupConversationModel.swift; sourceTree = "<group>"; };
 		18A42EB02A7A3C4500D8A88E /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A42EB32A7A3C4500D8A88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A42EB52A7A3C4500D8A88E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				18A42ECB2A7A4B7F00D8A88E /* ConversationModel.swift */,
+				184FCCBC2A7A7D930084A417 /* UserModel.swift */,
+				184FCCBE2A7A7E5D0084A417 /* GroupConversationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,9 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A42EB82A7A3C4500D8A88E /* ViewController.swift in Sources */,
+				184FCCBF2A7A7E5D0084A417 /* GroupConversationModel.swift in Sources */,
 				18A42EBE2A7A3C4500D8A88E /* ChatApp.xcdatamodeld in Sources */,
 				18A42ECC2A7A4B7F00D8A88E /* ConversationModel.swift in Sources */,
 				18A42EB42A7A3C4500D8A88E /* AppDelegate.swift in Sources */,
+				184FCCBD2A7A7D930084A417 /* UserModel.swift in Sources */,
 				18A42EB62A7A3C4500D8A88E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
