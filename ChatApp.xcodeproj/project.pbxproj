@@ -13,6 +13,7 @@
 		18A42EBE2A7A3C4500D8A88E /* ChatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A42EBC2A7A3C4500D8A88E /* ChatApp.xcdatamodeld */; };
 		18A42EC02A7A3C4800D8A88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A42EBF2A7A3C4800D8A88E /* Assets.xcassets */; };
 		18A42EC32A7A3C4800D8A88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A42EC12A7A3C4800D8A88E /* LaunchScreen.storyboard */; };
+		18A42ECC2A7A4B7F00D8A88E /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A42ECB2A7A4B7F00D8A88E /* ConversationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18A42EBF2A7A3C4800D8A88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A42EC22A7A3C4800D8A88E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A42EC42A7A3C4800D8A88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A42ECB2A7A4B7F00D8A88E /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		18A42EB22A7A3C4500D8A88E /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				18A42ECA2A7A4B3F00D8A88E /* Models */,
 				18A42EB32A7A3C4500D8A88E /* AppDelegate.swift */,
 				18A42EB52A7A3C4500D8A88E /* SceneDelegate.swift */,
 				18A42EB72A7A3C4500D8A88E /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				18A42EBC2A7A3C4500D8A88E /* ChatApp.xcdatamodeld */,
 			);
 			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		18A42ECA2A7A4B3F00D8A88E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18A42ECB2A7A4B7F00D8A88E /* ConversationModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				18A42EB82A7A3C4500D8A88E /* ViewController.swift in Sources */,
 				18A42EBE2A7A3C4500D8A88E /* ChatApp.xcdatamodeld in Sources */,
+				18A42ECC2A7A4B7F00D8A88E /* ConversationModel.swift in Sources */,
 				18A42EB42A7A3C4500D8A88E /* AppDelegate.swift in Sources */,
 				18A42EB62A7A3C4500D8A88E /* SceneDelegate.swift in Sources */,
 			);
