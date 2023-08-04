@@ -4,13 +4,9 @@
 import Foundation
 
 
-struct ConversationModel: Codable {
+protocol ConversationModel {
     
-    let conversationID: String
-    let conversationTitle: String
-    let didMessageSeen: Bool
-    let didMessageSent: Bool
-    let messageID: String
-    let messageTxt: String
-    let messageDate: String
+    var conversationID: String { get set }
+    var conversationTitle: String { get set }
+
 }
