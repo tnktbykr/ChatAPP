@@ -1,15 +1,11 @@
-//
-//  GroupConversationModel.swift
-//  ChatApp
-
 
 import Foundation
 
 struct GroupConversationModel: ConversationModel {
-   
-    var conversationID: String
+    var conversationID: UUID
     var conversationTitle: String
-
+    let groupConversationImage: String
+    
     let members: Model
 
     struct Model: Codable {

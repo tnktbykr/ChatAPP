@@ -1,13 +1,11 @@
-//
-//  UserModel.swift
-//  ChatApp
-
-//
 
 import Foundation
 
-struct UserModel: Codable {
+struct UserModel: Codable, ConversationModel {
+    var conversationID: UUID
     
+    
+    let participatorID: UUID
     let participatorName: String
     let participatorImage: String
 
