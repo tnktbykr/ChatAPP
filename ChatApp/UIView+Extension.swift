@@ -21,10 +21,7 @@ extension UIViewController {
     @objc func dismissKeyboard() {
        
         view.endEditing(true)
-        
-        NotificationCenter.default.post(name: NSNotification.Name("checkIsSearching"), object: nil)
-        
-        
+
         debugPrint("KEYBOARD DISMISSED")
     }
     

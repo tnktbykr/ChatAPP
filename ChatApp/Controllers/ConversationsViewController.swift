@@ -18,8 +18,7 @@ class ConversationsViewController: UIViewController, CNContactPickerDelegate {
     
     var filteredTitleArray = [String]()
     var filteredIdArray = [UUID]()
-    
-    var usersArray = [UserModel]()
+
     
     private var conversationsView: ConversationsView?
     
@@ -260,39 +259,15 @@ class ConversationsViewController: UIViewController, CNContactPickerDelegate {
     }
     
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
-        debugPrint("SELECTED CONTACT NAME: \(contact.givenName) + \(contact.familyName)")
-        
+
         var chatTitle = ("\(contact.givenName) \(contact.familyName)")
     
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let data = NSEntityDescription.insertNewObject(forEntityName: "Conversations", into: context)
+        let convsTitle = ("\(chatTitle)")
         
-        var convsTitle = ("\(contact.givenName) \(contact.familyName)")
         let convsID = UUID()
         
-        data.setValue(convsTitle, forKey: "conversationTitle")
-        data.setValue(convsID, forKey: "conversationID")
+        CoreDatamanager.shared.saveConversation(convsID: convsID, convsTitle: convsTitle)
         
-        do {
-            // TODO: SAVE USER TO CORE DATA
-            
-            try context.save()
-            debugPrint("conversation saved")
-            var userID = UUID()
-            usersArray.append(UserModel(conversationID: convsID,
-                                        participatorID: userID,
-                                        participatorName: convsTitle,
-                                        participatorImage: "ımageURl"))
-            
-        } catch {
-            debugPrint("conversastion save ERROR")
-        }
-        for user in usersArray {
-            
-            debugPrint("\(user.participatorName) : CONVS ID:  \(user.conversationID) +  USER ID : \(user.participatorID)")
-            
-        }
         // TODO: - START CHAT SCREEN
         let vc = ChatViewController()
         vc.participatorName = chatTitle

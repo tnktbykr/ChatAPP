@@ -1,15 +1,15 @@
 
 import Foundation
 
-struct MessageModel: ConversationModel  {
+struct MessageModel: ConversationModel {
     var conversationID: UUID
     
-    
-    let messageID: String
+    let senderID: UUID
+    let messageID: UUID
     let messageTxt: String
-    let messageDate: String
-    let didMessageSeen: Bool
-    let didMessageSent: Bool
+//    let messageDate: String
+//    let didMessageSeen: Bool
+//    let didMessageSent: Bool
     
 }
  

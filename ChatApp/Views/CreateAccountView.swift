@@ -108,11 +108,16 @@ class CreateAccountView: UIView, UITextFieldDelegate, UITextViewDelegate {
             
             Defaults [.userName] = userNameField.text!
             Defaults [.userID] = UUID().uuidString
+            Defaults [.userLoggedIn] = true
             
             debugPrint("GO TO CONVERSATIONS")
+            debugPrint("USER -> \(Defaults [.userName])")
+            debugPrint("USER-> \( Defaults [.userID])")
+
             continueToConversationsAction?()
             
         }else {
+            
             debugPrint("SHOW ALERT")
             showAlertAction?()
         }

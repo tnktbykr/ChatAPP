@@ -12,7 +12,8 @@ class DataManager {
     static let shared = DataManager()
     
     var conversationList = [ConversationModel]()
-
+    var messages = [MessageModel]()
+    var usersArray = [UserModel]()
     
     private init() {
         debugPrint("DM -> DataManager started")

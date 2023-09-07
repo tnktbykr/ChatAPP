@@ -4,4 +4,15 @@
         <attribute name="conversationID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="conversationTitle" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Message" representedClassName="Message" syncable="YES" codeGenerationType="class">
+        <attribute name="conversationID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="messageID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="messageTxt" optional="YES" attributeType="String"/>
+        <attribute name="senderID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="conversationID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="userID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+    </entity>
 </model>

@@ -65,8 +65,6 @@ class ConversationsView: UIView, UITableViewDelegate, UITableViewDataSource {
         startNewConversationButton.autoPinEdge(toSuperviewEdge: .right, withInset: 25)
         startNewConversationButton.autoSetDimensions(to: CGSize(width: 25, height: 25))
 
-        
-        
         conversationsTableView.autoPinEdge(.top, to: .bottom, of: screenLabel, withOffset: 10)
         conversationsTableView.autoPinEdge(toSuperviewEdge: .left, withInset: 0)
         conversationsTableView.autoPinEdge(toSuperviewEdge: .right, withInset: 0)
